@@ -1,41 +1,36 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-color:rgb(234, 255, 254);
-}
-#header{
-  position: fixed;
-  top: 0;
-  width:100%;
-  display: flex;
-  justify-content: space-around;
-  align-items:center;
-  flex-wrap:wrap;
-  background-color: lightgreen;
   margin: 0;
 }
+main{
+  padding: 10px;
+}
+#header{
+  background-color: lightgreen;
+  margin: 0;
+  height: 68px;
+}
 #logo-container{
-  
- 
-  height: 80px;
- 
+  height: 60px;
+  padding: 0;
 }
 #header-img{
-  
-  height: 90%;
-  margin:5%;
+  height: 100%;
 }
 #nav-bar ul{
   list-style: none;
   display: flex;
   justify-content: flex-end;
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap; 
+  width: 100%;
 }
-
 #nav-bar li{
   border-style: solid;
   border-width: 0px 2px 0px 0px;
-  color: white
-  
+  color: white;
 }
 .nav-link{
   text-decoration: none;
@@ -50,25 +45,20 @@ body{
   color: red;
 }
 .main-containers{
-  margin-top:80px;
-  
+  padding-top:100px; 
   width:100%;
   display: flex;
   flex-direction: column;
   justify-content:center;
   align-items: center;
+  height: 50vh;
 }
-
 h1{
   font-size:3em;
 }
 p{
   max-width:600px;
   font-size:1.2em;
-}
-#example{
-  display: flex;
-  justify-content: center;
 }
 #iframe-container{
   width: 560px;
@@ -79,14 +69,20 @@ iframe{
   height: 100%;
   width: 100%;
 }
-@media only screen and (max-width: 535px) {
+@media (max-width: 575px) {
   #video {
     width:100%;
+    height: auto;
   }
-}
-}
-@media only screen and (max-width: 392px) {
-  #video {
-    width:100%;
+  #nav-bar li{
+    border-width: 0px 0px 0px 0px;
+    color: white;
+    text-align: center;
+  }
+  #header{
+    height: auto;
+  }
+  .main-containers{
+    height: auto;
   }
 }
