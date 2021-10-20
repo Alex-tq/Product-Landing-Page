@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header id="header" class="navbar navbar-expand-sm fixed-top navbar-light ">
+  <div id="logo-container" class="navbar-brand">
+    <img src="https://is5-ssl.mzstatic.com/image/thumb/Podcasts113/v4/29/d5/e8/29d5e802-b5e7-9dc4-f300-e6472ac27d04/mza_440076239163041537.png/268x0w.jpg" id="header-img">
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navBar" aria-controls=".navBar" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <nav class="collapse navbar-collapse navBar" id="nav-bar">
+    <ul class="navbar-nav ">
+      <li><a href="#about" class="nav-link">About</a></li> 
+      <li><a href="#example" class="nav-link">Example</a></li> 
+      <li><a href="#contact" class="nav-link">Contact</a></li> 
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div id="about"class="main-containers">
+    <h1>About CodeNewbie</h1>
+    <p>CodeNewbie is a podcast for everyone in the process of learning code. The host Saron Yitbarek interviews someone from the CS community in every podcast (like Quincy Larson founder of FreeCodeCamp) and asks the questions that we all want to know. You can find the podcast on Podbean, Spotify and a lot more podcats streaming platforms.</p>
+    
+  </div>
+  <div id="example"class="main-containers">
+    <div id="iframe-container">
+    <iframe  src="https://www.youtube.com/embed/FBlWnY69E5A?start=184" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" id="video"allowfullscreen></iframe>
+  </div>  
+  </div>
+  <div id="contact" class="main-containers">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input type="email" placeholder="Enter your email" id="email" name="email">
+      <input type="submit" id="submit">
+    </form>
+  </div>
+</main>
+</body>
+</html>
